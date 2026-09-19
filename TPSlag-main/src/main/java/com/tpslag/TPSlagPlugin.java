@@ -1,4 +1,4 @@
-package com.tpslag;
+package awa.uxu.tpslag;
 
 import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;

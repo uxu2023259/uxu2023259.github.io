@@ -1,0 +1,12 @@
+lag:
+  enabled-on-startup: false
+  startup-target-tps: 10.0
+  world: world
+  chunk-offset: 512
+bots:
+  default-count: 20
+  default-speed: 4.0
+  default-duration-seconds: 30
+  default-name: "Bot-%X"
+  default-join-message: "§e%name joined the game"
+  entity-type: "ZOMBIE"

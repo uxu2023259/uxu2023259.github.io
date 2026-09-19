@@ -1,4 +1,4 @@
-package com.tpslag;
+package awa.uxu.tpslag;
 
 import org.jetbrains.annotations.Nullable;
 

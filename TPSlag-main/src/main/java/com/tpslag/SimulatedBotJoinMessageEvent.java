@@ -1,4 +1,4 @@
-package com.tpslag;
+package awa.uxu.tpslag;
 
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;

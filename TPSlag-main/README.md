@@ -22,7 +22,7 @@
    - 通过定时移动/交互读取来制造“被 bot 冲击”的场景。
    - 创建 Bot 时会广播“加入消息”。
    - 可对接其他插件自定义加入信息：
-     - 通过 Bukkit `ServicesManager` 注册 `com.tpslag.BotJoinMessageProvider`
+     - 通过 Bukkit `ServicesManager` 注册 `awa.uxu.tpslag.BotJoinMessageProvider`
      - 或监听 `SimulatedBotJoinMessageEvent` 修改/取消最终消息
    - ` /abot stop ` 可提前清理
 
