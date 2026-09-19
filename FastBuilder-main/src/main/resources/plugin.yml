@@ -1,0 +1,37 @@
+name: FastBuilderPro
+version: 1.0
+main: awa.uxu.fastbuilder.FastBuilderPro
+api-version: 1.21
+
+softdepend:
+  - PlugMan
+  - PlugManX
+
+commands:
+  fb:
+    description: FastBuilder 主命令
+    usage: /fb
+
+permissions:
+  fb.*:
+    default: op
+    children:
+      fb.use: true
+      fb.pos: true
+      fb.copy: true
+      fb.save: true
+      fb.list: true
+      fb.build: true
+      fb.preview: true
+      fb.paste: true
+      fb.quick: true
+      fb.confirm: true
+      fb.cancel: true
+      fb.progress: true
+      fb.menu: true
+      fb.gui: true
+      fb.undo: true
+      fb.reload: true
+
+  fb.use:
+    default: op

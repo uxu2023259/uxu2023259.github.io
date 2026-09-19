@@ -1,0 +1,7 @@
+build:
+  tick-interval: 1          # 每多少 tick 执行一次
+  blocks-per-tick: 1        # 每 tick 放多少个方块
+  max-blocks: 200000        # 最大允许结构方块数
+
+preview:
+  seconds: 10               # 预览时间（秒）

@@ -249,3 +249,85 @@ fatal: not a git repository (or any of the parent directories): .git
 - **Notes**: 已改用文件扫描完成验证。
 
 ---
+## [ERR-20260518-001] powershell_redirection
+
+**Logged**: 2026-05-18T00:00:00+08:00
+**Priority**: low
+**Status**: pending
+**Area**: infra
+
+### Summary
+在 PowerShell 中误用 Bash 风格 here-doc 重定向导致命令解析失败。
+
+### Error
+```text
+ParserError: Missing file specification after redirection operator.
+```
+
+### Context
+- 尝试执行 `python - <<'PY'`。
+- 当前 shell 是 PowerShell，应使用 `@' ... '@ | python -`。
+
+### Suggested Fix
+PowerShell 环境下运行内联 Python 时统一使用 here-string 管道格式。
+
+### Metadata
+- Reproducible: yes
+- Related Files: C:\Users\hyx\Desktop\hyx823894.github.io-main
+
+---
+## [ERR-20260518-002] browser_file_url_policy
+
+**Logged**: 2026-05-18T00:00:00+08:00
+**Priority**: low
+**Status**: pending
+**Area**: frontend
+
+### Summary
+使用浏览器插件打开本地 file:// 页面时被浏览器安全策略阻止。
+
+### Error
+```text
+Browser Use cannot visit the requested page because its URL is blocked by the Browser Use URL policy.
+```
+
+### Context
+- 目标是验证本地静态 HTML 页面视觉与链接。
+- 浏览器策略明确要求不要通过绕过方式访问同一页面。
+- 已改用 HTML 解析、路径存在性与 UTF-8 校验作为安全替代验证。
+
+### Suggested Fix
+后续需要浏览器可视检查时，优先让用户确认可访问的本地 HTTP 预览方式；若策略阻止，不再尝试规避。
+
+### Metadata
+- Reproducible: yes
+- Related Files: C:\Users\hyx\Desktop\hyx823894.github.io-main\index.html
+
+---
+## [ERR-20260518-003] tpslag_icon_script_scaling
+
+**Logged**: 2026-05-18T00:00:00+08:00
+**Priority**: low
+**Status**: pending
+**Area**: frontend
+
+### Summary
+重绘 TPS 压测图标时，缩放辅助函数没有处理多边形点列表，导致脚本失败。
+
+### Error
+```text
+TypeError: type tuple doesn't define __round__ method
+```
+
+### Context
+- 图标绘制脚本把坐标框和多边形点列表都传入同一个缩放函数。
+- 多边形参数是嵌套 tuple 列表，不能直接 round。
+
+### Suggested Fix
+区分缩放坐标框和缩放多边形点列表，分别使用 box() 与 poly() 辅助函数。
+
+### Metadata
+- Reproducible: yes
+- Related Files: C:\Users\hyx\Desktop\hyx823894.github.io-main\assets\images\plugin-icons\tpslag.webp
+
+---

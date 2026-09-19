@@ -1,0 +1,21 @@
+name: TPSlag
+version: 1.0.0
+main: com.tpslag.TPSlagPlugin
+api-version: '1.21'
+load: POSTWORLD
+authors: ["Codex"]
+description: Safe and recoverable lag simulation with attack-bot scene simulation.
+commands:
+  tpslag:
+    description: Start/stop/status for target TPS controller.
+    usage: /tpslag <start|stop|status|pos> [tps]
+    permission: tpslag.control
+  abot:
+    description: Simulate a bot attack using real entities.
+    usage: /abot [数量] [速度] [时间] [名称]
+    permission: tpslag.abot
+permissions:
+  tpslag.control:
+    default: op
+  tpslag.abot:
+    default: op
