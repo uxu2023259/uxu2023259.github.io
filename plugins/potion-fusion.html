@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="将两瓶同类型药水放入铁砧，合并效果并按实际颜色生成混合药水。">
+    <meta name="theme-color" content="#07111f">
+    <title>药水融合 · 插件介绍</title>
+    <link rel="stylesheet" href="../assets/css/plugin-page.css">
+</head>
+<body class="theme-potion">
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="../index.html" aria-label="返回主页"><span class="brand-mark" aria-hidden="true"></span>药水融合 · PotionFusion</a>
+            <nav class="quick-links" aria-label="页面导航"><a href="#intro">插件介绍</a><a href="#features">核心能力</a><a href="#workflow">使用流程</a><a href="#info">运行信息</a></nav>
+        </header>
+        <section class="hero" aria-label="插件概览">
+            <article class="identity">
+                <div class="plugin-icon image-icon" aria-label="药水融合图标"><img src="../assets/images/plugin-icons/potion-fusion.webp" alt="药水融合图标" loading="eager" decoding="async"></div>
+                <h1 class="name-cn">药水融合</h1><p class="subtitle">在铁砧中合成保留多种效果的药水</p>
+            </article>
+            <article class="hero-copy">
+                <p class="label">铁砧合成 · 效果合并 · 多种药水形态</p>
+                <h2 class="hero-title">药水融合 · <span class="accent-text">项目介绍</span></h2>
+                <p class="hero-text">药水融合把药水组合放进原版铁砧流程：相同类型的两瓶药水可以合成一瓶，同时保留两边的效果。结果颜色按输入药水显示颜色混合，尽量只响应明确的药水合成操作。</p>
+                <div class="hero-actions"><a class="btn primary" href="#features">查看核心能力</a><a class="btn secondary" href="https://github.com/uxu2023259/PotionFusion" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div>
+            </article>
+        </section>
+        <section class="section" id="intro"><h2 class="section-title">插件介绍</h2><p class="section-lead">将两瓶同类型药水放入铁砧，合并效果并按实际颜色生成混合药水。 项目源码、更新记录及安装细节请查看 GitHub 仓库。</p></section>
+        <section class="section" id="features"><h2 class="section-title">核心能力</h2><div class="card-list"><article class="mini-card"><h3 class="mini-title">铁砧操作</h3><p class="mini-text">使用玩家熟悉的铁砧界面完成药水合成。</p></article><article class="mini-card"><h3 class="mini-title">效果保留</h3><p class="mini-text">不同效果全部保留；重复效果按等级与持续时间合并。</p></article><article class="mini-card"><h3 class="mini-title">支持多种药水</h3><p class="mini-text">支持普通、喷溅和滞留药水的混合。</p></article><article class="mini-card"><h3 class="mini-title">兼顾原版流程</h3><p class="mini-text">不取消铁砧事件，减少对其他铁砧操作和插件的影响。</p></article></div></section>
+        <section class="section" id="workflow"><h2 class="section-title">使用流程</h2><div class="timeline"><article class="timeline-item"><div class="step-index">一</div><h3 class="step-title">将两瓶相同类型的药水放入铁砧。</h3></article><article class="timeline-item"><div class="step-index">二</div><h3 class="step-title">检查预览结果中的合并效果与药水形态。</h3></article><article class="timeline-item"><div class="step-index">三</div><h3 class="step-title">取出融合药水，按合并后的效果使用。</h3></article></div></section>
+        <section class="section" id="info"><h2 class="section-title">运行信息</h2><div class="info-list"><article class="info-item"><h3 class="info-title">支持平台</h3><p class="info-text">Paper 1.20.4–1.21.11；Java 17 或更高版本。</p></article><article class="info-item"><h3 class="info-title">操作方式</h3><p class="info-text">无需额外命令，通过铁砧交互使用。</p></article><article class="info-item"><h3 class="info-title">项目产物</h3><p class="info-text">源码仓库提供 Maven 构建说明与 PLUGIN 目录成品。</p></article></div></section>
+        <p class="footer-note">当前合成规则要求两瓶药水类型相同；结果效果根据药水数据合并。 <a class="btn secondary" href="https://github.com/uxu2023259/PotionFusion" target="_blank" rel="noopener noreferrer">打开 GitHub 项目</a></p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="审计生存服危险爆炸物放置记录，支持查询、通知和管理查看。">
+    <meta name="theme-color" content="#07111f">
+    <title>TNT 放置审计 · 插件介绍</title>
+    <link rel="stylesheet" href="../assets/css/plugin-page.css">
+</head>
+<body class="theme-tntprotect">
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="../index.html" aria-label="返回主页"><span class="brand-mark" aria-hidden="true"></span>TNT 放置审计 · TNTProtect</a>
+            <nav class="quick-links" aria-label="页面导航"><a href="#intro">插件介绍</a><a href="#features">核心能力</a><a href="#workflow">使用流程</a><a href="#info">运行信息</a></nav>
+        </header>
+        <section class="hero" aria-label="插件概览">
+            <article class="identity">
+                <div class="plugin-icon image-icon" aria-label="TNT 放置审计图标"><img src="../assets/images/plugin-icons/tntprotect.webp" alt="TNT 放置审计图标" loading="eager" decoding="async"></div>
+                <h1 class="name-cn">TNT 放置审计</h1><p class="subtitle">记录并提醒危险爆炸物的放置行为</p>
+            </article>
+            <article class="hero-copy">
+                <p class="label">行为审计 · 玩家通知 · 管理 GUI</p>
+                <h2 class="hero-title">TNT 放置审计 · <span class="accent-text">项目介绍</span></h2>
+                <p class="hero-text">TNT 放置审计面向生存服管理，记录危险爆炸物相关放置行为，并让管理员按玩家、类型或分页查询记录。插件可按配置反馈通知，便于追查可能造成破坏的行为。</p>
+                <div class="hero-actions"><a class="btn primary" href="#features">查看核心能力</a><a class="btn secondary" href="https://github.com/uxu2023259/TNTProtect" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div>
+            </article>
+        </section>
+        <section class="section" id="intro"><h2 class="section-title">插件介绍</h2><p class="section-lead">审计生存服危险爆炸物放置记录，支持查询、通知和管理查看。 项目源码、更新记录及安装细节请查看 GitHub 仓库。</p></section>
+        <section class="section" id="features"><h2 class="section-title">核心能力</h2><div class="card-list"><article class="mini-card"><h3 class="mini-title">放置行为记录</h3><p class="mini-text">记录被纳入规则的危险爆炸物放置事件。</p></article><article class="mini-card"><h3 class="mini-title">记录浏览</h3><p class="mini-text">支持分页或按玩家筛选的管理查看界面。</p></article><article class="mini-card"><h3 class="mini-title">分类查询</h3><p class="mini-text">可根据记录类型筛选审计结果。</p></article><article class="mini-card"><h3 class="mini-title">配置热重载</h3><p class="mini-text">支持重载检测、通知和记录相关设置。</p></article></div></section>
+        <section class="section" id="workflow"><h2 class="section-title">使用流程</h2><div class="timeline"><article class="timeline-item"><div class="step-index">一</div><h3 class="step-title">管理员配置需要审计的行为与通知方式。</h3></article><article class="timeline-item"><div class="step-index">二</div><h3 class="step-title">玩家放置符合规则的爆炸物时生成记录。</h3></article><article class="timeline-item"><div class="step-index">三</div><h3 class="step-title">通过管理命令查看、筛选和追踪相关事件。</h3></article></div></section>
+        <section class="section" id="info"><h2 class="section-title">运行信息</h2><div class="info-list"><article class="info-item"><h3 class="info-title">支持平台</h3><p class="info-text">Paper 1.20 或更高版本。</p></article><article class="info-item"><h3 class="info-title">管理命令</h3><p class="info-text">/tntprotect help、/tntprotect list、/tntprotect reload。</p></article><article class="info-item"><h3 class="info-title">适用场景</h3><p class="info-text">需要追踪危险爆炸物使用情况的生存服务器。</p></article></div></section>
+        <p class="footer-note">该插件用于审计和通知，不替代领地、权限或爆炸保护插件的实际防护配置。 <a class="btn secondary" href="https://github.com/uxu2023259/TNTProtect" target="_blank" rel="noopener noreferrer">打开 GitHub 项目</a></p>
+    </main>
+</body>
+</html>

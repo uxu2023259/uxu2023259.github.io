@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="在 PocketMine/InCore 上转换 Java 1.8 客户端协议，接入服务端玩家数据包模型。">
+    <meta name="theme-color" content="#07111f">
+    <title>BigBrother Java 版接入 · 插件介绍</title>
+    <link rel="stylesheet" href="../assets/css/plugin-page.css">
+</head>
+<body class="theme-bigbrother">
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="../index.html" aria-label="返回主页"><span class="brand-mark" aria-hidden="true"></span>BigBrother Java 版接入 · BigBrother</a>
+            <nav class="quick-links" aria-label="页面导航"><a href="#intro">插件介绍</a><a href="#features">核心能力</a><a href="#workflow">使用流程</a><a href="#info">运行信息</a></nav>
+        </header>
+        <section class="hero" aria-label="插件概览">
+            <article class="identity">
+                <div class="plugin-icon image-icon" aria-label="BigBrother Java 版接入图标"><img src="../assets/images/plugin-icons/bigbrother.webp" alt="BigBrother Java 版接入图标" loading="eager" decoding="async"></div>
+                <h1 class="name-cn">BigBrother Java 版接入</h1><p class="subtitle">让 Java 版 1.8 客户端接入 PocketMine 服务端</p>
+            </article>
+            <article class="hero-copy">
+                <p class="label">Java 协议 47 · TCP 监听 · PocketMine/InCore</p>
+                <h2 class="hero-title">BigBrother Java 版接入 · <span class="accent-text">项目介绍</span></h2>
+                <p class="hero-text">BigBrother 是面向 PocketMine/InCore 的协议桥接插件。它监听独立 TCP 端口，把支持的 Java 版 1.8 数据包转换为核心服务端能够处理的玩家数据包，让旧版 Java 客户端连接到 Bedrock 服务端。</p>
+                <div class="hero-actions"><a class="btn primary" href="#features">查看核心能力</a><a class="btn secondary" href="https://github.com/uxu2023259/BigBrother" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div>
+            </article>
+        </section>
+        <section class="section" id="intro"><h2 class="section-title">插件介绍</h2><p class="section-lead">在 PocketMine/InCore 上转换 Java 1.8 客户端协议，接入服务端玩家数据包模型。 项目源码、更新记录及安装细节请查看 GitHub 仓库。</p></section>
+        <section class="section" id="features"><h2 class="section-title">核心能力</h2><div class="card-list"><article class="mini-card"><h3 class="mini-title">Java 1.8 协议接入</h3><p class="mini-text">支持协议 47 客户端连接到 PocketMine/InCore。</p></article><article class="mini-card"><h3 class="mini-title">数据包转换</h3><p class="mini-text">在 Java 客户端与核心玩家数据包模型之间转换受支持的数据包。</p></article><article class="mini-card"><h3 class="mini-title">独立 TCP 监听</h3><p class="mini-text">监听单独配置的 TCP 地址和端口，与 Bedrock 的 RakNet UDP 端口分开。</p></article><article class="mini-card"><h3 class="mini-title">在线身份验证</h3><p class="mini-text">可通过 Mojang 会话服务验证 Java 玩家；公开服务器建议保持在线验证。</p></article></div></section>
+        <section class="section" id="workflow"><h2 class="section-title">使用流程</h2><div class="timeline"><article class="timeline-item"><div class="step-index">一</div><h3 class="step-title">将 PHAR 安装到 PocketMine/InCore 的 plugins 目录。</h3></article><article class="timeline-item"><div class="step-index">二</div><h3 class="step-title">配置 TCP 监听地址、端口与在线身份验证选项。</h3></article><article class="timeline-item"><div class="step-index">三</div><h3 class="step-title">Java 1.8 客户端连接桥接端口；Bedrock 客户端继续使用原服务器端口。</h3></article></div></section>
+        <section class="section" id="info"><h2 class="section-title">运行信息</h2><div class="info-list"><article class="info-item"><h3 class="info-title">支持平台</h3><p class="info-text">PocketMine/InCore；Java 8 客户端协议 47。</p></article><article class="info-item"><h3 class="info-title">运行依赖</h3><p class="info-text">PHP 8 CLI 构建，运行依赖按仓库和服务端要求配置。</p></article><article class="info-item"><h3 class="info-title">网络配置</h3><p class="info-text">需开放单独 TCP 端口；在线验证需要 OpenSSL、cURL 与 HTTPS 出站连接。</p></article></div></section>
+        <p class="footer-note">这是 PocketMine 生态插件，不是 Paper 插件。在线验证建议保持开启；不要在公网服务器使用未经验证的离线名称。 <a class="btn secondary" href="https://github.com/uxu2023259/BigBrother" target="_blank" rel="noopener noreferrer">打开 GitHub 项目</a></p>
+    </main>
+</body>
+</html>

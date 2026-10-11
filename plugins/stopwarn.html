@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="在服务器正常关闭前显示聊天和 BossBar 倒计时提醒。">
+    <meta name="theme-color" content="#07111f">
+    <title>停服预警 · 插件介绍</title>
+    <link rel="stylesheet" href="../assets/css/plugin-page.css">
+</head>
+<body class="theme-stopwarn">
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="../index.html" aria-label="返回主页"><span class="brand-mark" aria-hidden="true"></span>停服预警 · StopWarn</a>
+            <nav class="quick-links" aria-label="页面导航"><a href="#intro">插件介绍</a><a href="#features">核心能力</a><a href="#workflow">使用流程</a><a href="#info">运行信息</a></nav>
+        </header>
+        <section class="hero" aria-label="插件概览">
+            <article class="identity">
+                <div class="plugin-icon image-icon" aria-label="停服预警图标"><img src="../assets/images/plugin-icons/stopwarn.webp" alt="停服预警图标" loading="eager" decoding="async"></div>
+                <h1 class="name-cn">停服预警</h1><p class="subtitle">在正常关服前给在线玩家留出准备时间</p>
+            </article>
+            <article class="hero-copy">
+                <p class="label">关服倒计时 · 聊天提示 · BossBar</p>
+                <h2 class="hero-title">停服预警 · <span class="accent-text">项目介绍</span></h2>
+                <p class="hero-text">停服预警在服务器进入正常关闭流程前向在线玩家发布倒计时，结合聊天消息与 BossBar 展示，让玩家及时完成整理、保存和下线准备。</p>
+                <div class="hero-actions"><a class="btn primary" href="#features">查看核心能力</a><a class="btn secondary" href="https://github.com/uxu2023259/StopWarn" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div>
+            </article>
+        </section>
+        <section class="section" id="intro"><h2 class="section-title">插件介绍</h2><p class="section-lead">在服务器正常关闭前显示聊天和 BossBar 倒计时提醒。 项目源码、更新记录及安装细节请查看 GitHub 仓库。</p></section>
+        <section class="section" id="features"><h2 class="section-title">核心能力</h2><div class="card-list"><article class="mini-card"><h3 class="mini-title">关闭前提醒</h3><p class="mini-text">正常停服前按配置展示倒计时通知。</p></article><article class="mini-card"><h3 class="mini-title">多渠道提示</h3><p class="mini-text">同时使用聊天信息和 BossBar 显示剩余时间。</p></article><article class="mini-card"><h3 class="mini-title">适合维护窗口</h3><p class="mini-text">可配合计划维护或管理指令，让玩家提前知晓停服安排。</p></article><article class="mini-card"><h3 class="mini-title">轻量运行</h3><p class="mini-text">围绕服务器关闭事件执行提示，无需额外玩家命令。</p></article></div></section>
+        <section class="section" id="workflow"><h2 class="section-title">使用流程</h2><div class="timeline"><article class="timeline-item"><div class="step-index">一</div><h3 class="step-title">服务端进入正常关闭流程。</h3></article><article class="timeline-item"><div class="step-index">二</div><h3 class="step-title">插件向在线玩家显示聊天与 BossBar 倒计时。</h3></article><article class="timeline-item"><div class="step-index">三</div><h3 class="step-title">倒计时结束后由服务端继续执行关闭流程。</h3></article></div></section>
+        <section class="section" id="info"><h2 class="section-title">运行信息</h2><div class="info-list"><article class="info-item"><h3 class="info-title">支持平台</h3><p class="info-text">Paper 1.21。</p></article><article class="info-item"><h3 class="info-title">运行方式</h3><p class="info-text">由服务器正常关闭流程触发。</p></article><article class="info-item"><h3 class="info-title">配置说明</h3><p class="info-text">倒计时与提示文案按仓库配置文件调整。</p></article></div></section>
+        <p class="footer-note">此插件面向正常关闭流程。强制终止进程或系统崩溃时，服务器无法保证发送玩家通知。 <a class="btn secondary" href="https://github.com/uxu2023259/StopWarn" target="_blank" rel="noopener noreferrer">打开 GitHub 项目</a></p>
+    </main>
+</body>
+</html>

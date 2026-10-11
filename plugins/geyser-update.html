@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="自动检查 Geyser、Floodgate 和 Via 组件更新，并准备下载与替换流程。">
+    <meta name="theme-color" content="#07111f">
+    <title>Geyser 组件更新 · 插件介绍</title>
+    <link rel="stylesheet" href="../assets/css/plugin-page.css">
+</head>
+<body class="theme-geyser">
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="../index.html" aria-label="返回主页"><span class="brand-mark" aria-hidden="true"></span>Geyser 组件更新 · GeyserUpdate</a>
+            <nav class="quick-links" aria-label="页面导航"><a href="#intro">插件介绍</a><a href="#features">核心能力</a><a href="#workflow">使用流程</a><a href="#info">运行信息</a></nav>
+        </header>
+        <section class="hero" aria-label="插件概览">
+            <article class="identity">
+                <div class="plugin-icon image-icon" aria-label="Geyser 组件更新图标"><img src="../assets/images/plugin-icons/geyser-update.webp" alt="Geyser 组件更新图标" loading="eager" decoding="async"></div>
+                <h1 class="name-cn">Geyser 组件更新</h1><p class="subtitle">集中检查并更新跨版本连接组件</p>
+            </article>
+            <article class="hero-copy">
+                <p class="label">Geyser · Floodgate · Via 全家桶</p>
+                <h2 class="hero-title">Geyser 组件更新 · <span class="accent-text">项目介绍</span></h2>
+                <p class="hero-text">Geyser 组件更新可部署在 Paper 或 BungeeCord/Waterfall 服务端，按平台检查相应的 Geyser 与 Floodgate 文件，并可覆盖 Via 系列组件。管理员能手动检查、查看状态和重载配置。</p>
+                <div class="hero-actions"><a class="btn primary" href="#features">查看核心能力</a><a class="btn secondary" href="https://github.com/uxu2023259/GeyserUpdate" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div>
+            </article>
+        </section>
+        <section class="section" id="intro"><h2 class="section-title">插件介绍</h2><p class="section-lead">自动检查 Geyser、Floodgate 和 Via 组件更新，并准备下载与替换流程。 项目源码、更新记录及安装细节请查看 GitHub 仓库。</p></section>
+        <section class="section" id="features"><h2 class="section-title">核心能力</h2><div class="card-list"><article class="mini-card"><h3 class="mini-title">识别运行平台</h3><p class="mini-text">按 Paper 或代理端使用对应组件文件和更新流程。</p></article><article class="mini-card"><h3 class="mini-title">组件覆盖</h3><p class="mini-text">可检查 Geyser、Floodgate，以及配置中的 Via 系列或 SkinsRestorer。</p></article><article class="mini-card"><h3 class="mini-title">启动检查与定时计划</h3><p class="mini-text">支持启动时检查，也可配置每日检查时间。</p></article><article class="mini-card"><h3 class="mini-title">下载与文件校验</h3><p class="mini-text">检测到新构建后下载文件并准备离线替换。</p></article><article class="mini-card"><h3 class="mini-title">状态可查看</h3><p class="mini-text">提供检查、状态与配置重载命令。</p></article></div></section>
+        <section class="section" id="workflow"><h2 class="section-title">使用流程</h2><div class="timeline"><article class="timeline-item"><div class="step-index">一</div><h3 class="step-title">插件按平台检查已安装组件版本。</h3></article><article class="timeline-item"><div class="step-index">二</div><h3 class="step-title">发现更新后下载文件并校验，准备替换。</h3></article><article class="timeline-item"><div class="step-index">三</div><h3 class="step-title">计划更新会按配置安排服务端关闭，以便下次启动加载新文件。</h3></article></div></section>
+        <section class="section" id="info"><h2 class="section-title">运行信息</h2><div class="info-list"><article class="info-item"><h3 class="info-title">支持平台</h3><p class="info-text">Paper 与 BungeeCord/Waterfall；对应文件以配置为准。</p></article><article class="info-item"><h3 class="info-title">管理命令</h3><p class="info-text">/geyserupdate check、/geyserupdate status、/geyserupdate reload。</p></article><article class="info-item"><h3 class="info-title">维护注意</h3><p class="info-text">每日定时更新在下载完成后可能执行服务端关闭命令；请配置维护时间。</p></article></div></section>
+        <p class="footer-note">更新组件会改变服务器文件，并可能按配置停服。请先备份相关 JAR，并核对每日计划与关闭命令。 <a class="btn secondary" href="https://github.com/uxu2023259/GeyserUpdate" target="_blank" rel="noopener noreferrer">打开 GitHub 项目</a></p>
+    </main>
+</body>
+</html>

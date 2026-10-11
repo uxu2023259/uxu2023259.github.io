@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="按规则隐藏命令补全或阻止命令执行，降低普通玩家查询管理入口的能力。">
+    <meta name="theme-color" content="#07111f">
+    <title>命令遮蔽 · 插件介绍</title>
+    <link rel="stylesheet" href="../assets/css/plugin-page.css">
+</head>
+<body class="theme-cmdmask">
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="../index.html" aria-label="返回主页"><span class="brand-mark" aria-hidden="true"></span>命令遮蔽 · CommandMask</a>
+            <nav class="quick-links" aria-label="页面导航"><a href="#intro">插件介绍</a><a href="#features">核心能力</a><a href="#workflow">使用流程</a><a href="#info">运行信息</a></nav>
+        </header>
+        <section class="hero" aria-label="插件概览">
+            <article class="identity">
+                <div class="plugin-icon image-icon" aria-label="命令遮蔽图标"><img src="../assets/images/plugin-icons/command-mask.webp" alt="命令遮蔽图标" loading="eager" decoding="async"></div>
+                <h1 class="name-cn">命令遮蔽</h1><p class="subtitle">隐藏或拦截插件查询与管理入口</p>
+            </article>
+            <article class="hero-copy">
+                <p class="label">命令屏蔽 · 补全控制 · 白名单管理</p>
+                <h2 class="hero-title">命令遮蔽 · <span class="accent-text">项目介绍</span></h2>
+                <p class="hero-text">命令遮蔽允许管理员配置需要隐藏或限制的命令根，可选择仅隐藏补全、仅阻止执行或同时处理。规则兼顾 Bukkit、Minecraft 和 Paper 命名空间形式，并提供受信任玩家白名单。</p>
+                <div class="hero-actions"><a class="btn primary" href="#features">查看核心能力</a><a class="btn secondary" href="https://github.com/uxu2023259/FuckCrack" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div>
+            </article>
+        </section>
+        <section class="section" id="intro"><h2 class="section-title">插件介绍</h2><p class="section-lead">按规则隐藏命令补全或阻止命令执行，降低普通玩家查询管理入口的能力。 项目源码、更新记录及安装细节请查看 GitHub 仓库。</p></section>
+        <section class="section" id="features"><h2 class="section-title">核心能力</h2><div class="card-list"><article class="mini-card"><h3 class="mini-title">多种规则模式</h3><p class="mini-text">支持 HIDE、BLOCK、BLOCK_AND_HIDE 三种命令控制策略。</p></article><article class="mini-card"><h3 class="mini-title">命名空间覆盖</h3><p class="mini-text">可同时配置普通命令名和 bukkit:、minecraft:、paper: 等形式。</p></article><article class="mini-card"><h3 class="mini-title">白名单放行</h3><p class="mini-text">通过玩家白名单为可信用户保留正常访问。</p></article><article class="mini-card"><h3 class="mini-title">在线即时应用</h3><p class="mini-text">重载配置后刷新在线玩家命令树。</p></article><article class="mini-card"><h3 class="mini-title">控制台管理</h3><p class="mini-text">提供配置重载命令。</p></article></div></section>
+        <section class="section" id="workflow"><h2 class="section-title">使用流程</h2><div class="timeline"><article class="timeline-item"><div class="step-index">一</div><h3 class="step-title">在配置中加入要隐藏或阻止的命令根。</h3></article><article class="timeline-item"><div class="step-index">二</div><h3 class="step-title">选择命令补全和执行拦截模式。</h3></article><article class="timeline-item"><div class="step-index">三</div><h3 class="step-title">使用控制台重载配置并检查在线玩家命令树。</h3></article></div></section>
+        <section class="section" id="info"><h2 class="section-title">运行信息</h2><div class="info-list"><article class="info-item"><h3 class="info-title">支持平台</h3><p class="info-text">Paper 1.21。</p></article><article class="info-item"><h3 class="info-title">管理命令</h3><p class="info-text">/cmdmask reload；仅控制台或 RCON 可执行。</p></article><article class="info-item"><h3 class="info-title">安全提示</h3><p class="info-text">离线模式下按玩家名放行可能被冒用，只填写可信名单。</p></article></div></section>
+        <p class="footer-note">命令遮蔽属于访问界面控制，不替代服务端权限配置；仍应为敏感命令设置正确权限。 <a class="btn secondary" href="https://github.com/uxu2023259/FuckCrack" target="_blank" rel="noopener noreferrer">打开 GitHub 项目</a></p>
+    </main>
+</body>
+</html>

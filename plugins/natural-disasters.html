@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="在主世界随机触发箭雨、火灾等灾害，并通过聊天和 BossBar 提前预警。">
+    <meta name="theme-color" content="#07111f">
+    <title>自然灾害 · 插件介绍</title>
+    <link rel="stylesheet" href="../assets/css/plugin-page.css">
+</head>
+<body class="theme-disaster">
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="../index.html" aria-label="返回主页"><span class="brand-mark" aria-hidden="true"></span>自然灾害 · FZG-NaturalDisasters</a>
+            <nav class="quick-links" aria-label="页面导航"><a href="#intro">插件介绍</a><a href="#features">核心能力</a><a href="#workflow">使用流程</a><a href="#info">运行信息</a></nav>
+        </header>
+        <section class="hero" aria-label="插件概览">
+            <article class="identity">
+                <div class="plugin-icon image-icon" aria-label="自然灾害图标"><img src="../assets/images/plugin-icons/natural-disasters.webp" alt="自然灾害图标" loading="eager" decoding="async"></div>
+                <h1 class="name-cn">自然灾害</h1><p class="subtitle">以预警与环境事件为生存世界增加变数</p>
+            </article>
+            <article class="hero-copy">
+                <p class="label">随机灾害 · BossBar 预警 · 基岩版表单</p>
+                <h2 class="hero-title">自然灾害 · <span class="accent-text">项目介绍</span></h2>
+                <p class="hero-text">自然灾害面向 Leaf 生存服，只在主世界运行。插件会按配置随机安排灾害，在正式开始前显示倒计时；管理员可指定灾害、查看状态或停止事件，基岩版管理员还可以使用表单操作。</p>
+                <div class="hero-actions"><a class="btn primary" href="#features">查看核心能力</a><a class="btn secondary" href="https://github.com/FZG2-NetEase/FZG-NaturalDisasters" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div>
+            </article>
+        </section>
+        <section class="section" id="intro"><h2 class="section-title">插件介绍</h2><p class="section-lead">在主世界随机触发箭雨、火灾等灾害，并通过聊天和 BossBar 提前预警。 项目源码、更新记录及安装细节请查看 GitHub 仓库。</p></section>
+        <section class="section" id="features"><h2 class="section-title">核心能力</h2><div class="card-list"><article class="mini-card"><h3 class="mini-title">多种灾害</h3><p class="mini-text">包含箭雨、浴火焚烧、箭毒蛙浪潮与血红坟墓等事件。</p></article><article class="mini-card"><h3 class="mini-title">提前预警</h3><p class="mini-text">通过聊天提示和 BossBar 倒计时，为玩家提供寻找掩体或准备装备的时间。</p></article><article class="mini-card"><h3 class="mini-title">差异化效果</h3><p class="mini-text">灾害分别使用箭矢、燃烧、毒蛙与视觉状态效果，适配 Java 与 Geyser 基岩玩家。</p></article><article class="mini-card"><h3 class="mini-title">自动清理</h3><p class="mini-text">灾害结束、玩家离开或插件卸载时清理相关 BossBar、实体和效果。</p></article><article class="mini-card"><h3 class="mini-title">管理表单</h3><p class="mini-text">基岩版管理员可打开表单开始、停止灾害、查看状态和重载配置。</p></article></div></section>
+        <section class="section" id="workflow"><h2 class="section-title">使用流程</h2><div class="timeline"><article class="timeline-item"><div class="step-index">一</div><h3 class="step-title">按设定间隔抽取灾害并公布预警。</h3></article><article class="timeline-item"><div class="step-index">二</div><h3 class="step-title">倒计时结束后触发灾害并显示当前进度。</h3></article><article class="timeline-item"><div class="step-index">三</div><h3 class="step-title">灾害结束后移除临时实体和状态效果。</h3></article></div></section>
+        <section class="section" id="info"><h2 class="section-title">运行信息</h2><div class="info-list"><article class="info-item"><h3 class="info-title">支持平台</h3><p class="info-text">Leaf 1.21.4；Java 21。</p></article><article class="info-item"><h3 class="info-title">管理命令</h3><p class="info-text">/nd 开始、/nd 停止、/nd 状态、/nd 重载；权限 naturaldisasters.admin。</p></article><article class="info-item"><h3 class="info-title">兼容说明</h3><p class="info-text">红色雾效支持 Geyser 基岩玩家；未安装 Geyser 时插件仍可运行。</p></article></div></section>
+        <p class="footer-note">默认配置按主世界运行，并包含随机触发间隔与预警时长；可先在测试世界调整灾害强度。 <a class="btn secondary" href="https://github.com/FZG2-NetEase/FZG-NaturalDisasters" target="_blank" rel="noopener noreferrer">打开 GitHub 项目</a></p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="提供物品快照恢复、OP 验证名单、维护白名单和特殊装备管理。">
+    <meta name="theme-color" content="#07111f">
+    <title>XRayMC 服务器管理 · 插件介绍</title>
+    <link rel="stylesheet" href="../assets/css/plugin-page.css">
+</head>
+<body class="theme-xraymc">
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="../index.html" aria-label="返回主页"><span class="brand-mark" aria-hidden="true"></span>XRayMC 服务器管理 · XRayMCPlugin</a>
+            <nav class="quick-links" aria-label="页面导航"><a href="#intro">插件介绍</a><a href="#features">核心能力</a><a href="#workflow">使用流程</a><a href="#info">运行信息</a></nav>
+        </header>
+        <section class="hero" aria-label="插件概览">
+            <article class="identity">
+                <div class="plugin-icon image-icon" aria-label="XRayMC 服务器管理图标"><img src="../assets/images/plugin-icons/xraymcplugin.webp" alt="XRayMC 服务器管理图标" loading="eager" decoding="async"></div>
+                <h1 class="name-cn">XRayMC 服务器管理</h1><p class="subtitle">整合物品快照、OP 验证与维护模式管理</p>
+            </article>
+            <article class="hero-copy">
+                <p class="label">物品保护 · OP 验证 · 维护模式 · 特殊装备</p>
+                <h2 class="hero-title">XRayMC 服务器管理 · <span class="accent-text">项目介绍</span></h2>
+                <p class="hero-text">XRayMC 服务器管理插件面向 Paper 1.21.11，集合玩家物品快照保护、管理员 OP 验证、维护模式和特殊装备管理。快照读取失败时可阻止玩家登录，并按每 Tick 限额分摊采集以降低高峰开销。</p>
+                <div class="hero-actions"><a class="btn primary" href="#features">查看核心能力</a><a class="btn secondary" href="https://github.com/uxu2023259/XRayMCPlugin" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div>
+            </article>
+        </section>
+        <section class="section" id="intro"><h2 class="section-title">插件介绍</h2><p class="section-lead">提供物品快照恢复、OP 验证名单、维护白名单和特殊装备管理。 项目源码、更新记录及安装细节请查看 GitHub 仓库。</p></section>
+        <section class="section" id="features"><h2 class="section-title">核心能力</h2><div class="card-list"><article class="mini-card"><h3 class="mini-title">物品快照</h3><p class="mini-text">保存、查询、恢复或删除玩家物品快照，数据使用 SQLite。</p></article><article class="mini-card"><h3 class="mini-title">OP 验证</h3><p class="mini-text">管理受信任管理员名单，并在启动时恢复登记的 OP。</p></article><article class="mini-card"><h3 class="mini-title">维护模式</h3><p class="mini-text">开启维护时仅允许白名单与已验证管理员进入。</p></article><article class="mini-card"><h3 class="mini-title">特殊装备管理</h3><p class="mini-text">发放特殊装备并通过 GUI 定位或销毁装备实例。</p></article><article class="mini-card"><h3 class="mini-title">命令管控</h3><p class="mini-text">按规则隐藏或阻止插件查询和诊断命令。</p></article></div></section>
+        <section class="section" id="workflow"><h2 class="section-title">使用流程</h2><div class="timeline"><article class="timeline-item"><div class="step-index">一</div><h3 class="step-title">配置数据库、权限与维护白名单。</h3></article><article class="timeline-item"><div class="step-index">二</div><h3 class="step-title">使用 /xraymc snapshot 与 operator 命令管理玩家和管理员保护。</h3></article><article class="timeline-item"><div class="step-index">三</div><h3 class="step-title">维护时启用白名单，结束后关闭维护并检查状态。</h3></article></div></section>
+        <section class="section" id="info"><h2 class="section-title">运行信息</h2><div class="info-list"><article class="info-item"><h3 class="info-title">支持平台</h3><p class="info-text">Paper 1.21.11。</p></article><article class="info-item"><h3 class="info-title">管理命令</h3><p class="info-text">/xraymc snapshot、operator、whitelist、maintenance、equipment、reload。</p></article><article class="info-item"><h3 class="info-title">权限</h3><p class="info-text">管理权限默认关闭，使用前为可信管理员授予 xraymc.admin 或细分权限。</p></article></div></section>
+        <p class="footer-note">首次部署前请登记管理员或维护白名单，避免开启维护模式后将管理人员挡在服务器外。 <a class="btn secondary" href="https://github.com/uxu2023259/XRayMCPlugin" target="_blank" rel="noopener noreferrer">打开 GitHub 项目</a></p>
+    </main>
+</body>
+</html>

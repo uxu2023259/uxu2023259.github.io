@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="玩家挖掘矿石或击杀生物时发放金币，并可配置奖励和反馈方式。">
+    <meta name="theme-color" content="#07111f">
+    <title>生态方块 · 插件介绍</title>
+    <link rel="stylesheet" href="../assets/css/plugin-page.css">
+</head>
+<body class="theme-ecoblock">
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="../index.html" aria-label="返回主页"><span class="brand-mark" aria-hidden="true"></span>生态方块 · EcoBlock</a>
+            <nav class="quick-links" aria-label="页面导航"><a href="#intro">插件介绍</a><a href="#features">核心能力</a><a href="#workflow">使用流程</a><a href="#info">运行信息</a></nav>
+        </header>
+        <section class="hero" aria-label="插件概览">
+            <article class="identity">
+                <div class="plugin-icon image-icon" aria-label="生态方块图标"><img src="../assets/images/plugin-icons/ecoblock.webp" alt="生态方块图标" loading="eager" decoding="async"></div>
+                <h1 class="name-cn">生态方块</h1><p class="subtitle">把挖矿与击杀行为转化为可配置的经济奖励</p>
+            </article>
+            <article class="hero-copy">
+                <p class="label">挖矿奖励 · 击杀奖励 · Vault 经济</p>
+                <h2 class="hero-title">生态方块 · <span class="accent-text">项目介绍</span></h2>
+                <p class="hero-text">生态方块将日常生存行为接入服务器经济：玩家挖掘配置中的矿石或击杀生物后，插件通过经济接口发放奖励，并可在聊天反馈奖励结果。管理员可以调整奖励、游戏模式和反馈开关。</p>
+                <div class="hero-actions"><a class="btn primary" href="#features">查看核心能力</a><a class="btn secondary" href="https://github.com/uxu2023259/EcoBlock" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div>
+            </article>
+        </section>
+        <section class="section" id="intro"><h2 class="section-title">插件介绍</h2><p class="section-lead">玩家挖掘矿石或击杀生物时发放金币，并可配置奖励和反馈方式。 项目源码、更新记录及安装细节请查看 GitHub 仓库。</p></section>
+        <section class="section" id="features"><h2 class="section-title">核心能力</h2><div class="card-list"><article class="mini-card"><h3 class="mini-title">挖矿奖励</h3><p class="mini-text">按矿石种类配置奖励金额和中文名称。</p></article><article class="mini-card"><h3 class="mini-title">击杀奖励</h3><p class="mini-text">为击杀生物配置金币奖励。</p></article><article class="mini-card"><h3 class="mini-title">经济插件接入</h3><p class="mini-text">通过 Vault 对接服务器当前经济提供方。</p></article><article class="mini-card"><h3 class="mini-title">适用模式控制</h3><p class="mini-text">可选择允许发奖的游戏模式，并分别控制挖矿和击杀功能。</p></article><article class="mini-card"><h3 class="mini-title">状态与重载</h3><p class="mini-text">提供奖励配置状态查看和热重载命令。</p></article></div></section>
+        <section class="section" id="workflow"><h2 class="section-title">使用流程</h2><div class="timeline"><article class="timeline-item"><div class="step-index">一</div><h3 class="step-title">安装 Vault 以及兼容的经济提供插件。</h3></article><article class="timeline-item"><div class="step-index">二</div><h3 class="step-title">在配置中设置矿石、生物奖励与适用模式。</h3></article><article class="timeline-item"><div class="step-index">三</div><h3 class="step-title">玩家挖矿或击杀生物后自动获得金币。</h3></article></div></section>
+        <section class="section" id="info"><h2 class="section-title">运行信息</h2><div class="info-list"><article class="info-item"><h3 class="info-title">支持平台</h3><p class="info-text">Paper 1.21。</p></article><article class="info-item"><h3 class="info-title">依赖组件</h3><p class="info-text">Vault 与可用的经济提供方。</p></article><article class="info-item"><h3 class="info-title">管理命令</h3><p class="info-text">/ecoblock status、/ecoblock reload。</p></article></div></section>
+        <p class="footer-note">默认奖励仅适用于配置允许的游戏模式。上线前建议先校准奖励数值，避免影响服务器经济平衡。 <a class="btn secondary" href="https://github.com/uxu2023259/EcoBlock" target="_blank" rel="noopener noreferrer">打开 GitHub 项目</a></p>
+    </main>
+</body>
+</html>

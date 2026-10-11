@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="检查移动、战斗和采矿行为，默认观察模式，可逐步启用提醒或踢出。">
+    <meta name="theme-color" content="#07111f">
+    <title>XRayAC 生存反作弊 · 插件介绍</title>
+    <link rel="stylesheet" href="../assets/css/plugin-page.css">
+</head>
+<body class="theme-xrayac">
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="../index.html" aria-label="返回主页"><span class="brand-mark" aria-hidden="true"></span>XRayAC 生存反作弊 · XRayAC</a>
+            <nav class="quick-links" aria-label="页面导航"><a href="#intro">插件介绍</a><a href="#features">核心能力</a><a href="#workflow">使用流程</a><a href="#info">运行信息</a></nav>
+        </header>
+        <section class="hero" aria-label="插件概览">
+            <article class="identity">
+                <div class="plugin-icon image-icon" aria-label="XRayAC 生存反作弊图标"><img src="../assets/images/plugin-icons/xrayac.webp" alt="XRayAC 生存反作弊图标" loading="eager" decoding="async"></div>
+                <h1 class="name-cn">XRayAC 生存反作弊</h1><p class="subtitle">以证据审查为中心的 Paper 生存服检测工具</p>
+            </article>
+            <article class="hero-copy">
+                <p class="label">移动 · 战斗 · 挖掘 · 可控处罚模式</p>
+                <h2 class="hero-title">XRayAC 生存反作弊 · <span class="accent-text">项目介绍</span></h2>
+                <p class="hero-text">XRayAC 为 Paper 生存服提供事件驱动的反作弊检查，覆盖移动、战斗、快速破坏、Nuker 与矿物统计等场景。默认运行在观察模式，管理员可先收集证据，再按服务器实际情况配置告警或踢出。</p>
+                <div class="hero-actions"><a class="btn primary" href="#features">查看核心能力</a><a class="btn secondary" href="https://github.com/uxu2023259/XRayAC" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div>
+            </article>
+        </section>
+        <section class="section" id="intro"><h2 class="section-title">插件介绍</h2><p class="section-lead">检查移动、战斗和采矿行为，默认观察模式，可逐步启用提醒或踢出。 项目源码、更新记录及安装细节请查看 GitHub 仓库。</p></section>
+        <section class="section" id="features"><h2 class="section-title">核心能力</h2><div class="card-list"><article class="mini-card"><h3 class="mini-title">多类行为检查</h3><p class="mini-text">覆盖移动、战斗数据包、破坏速度与集中挖掘等行为。</p></article><article class="mini-card"><h3 class="mini-title">证据与调查</h3><p class="mini-text">可查看最近告警、检查玩家记录和运行健康状态。</p></article><article class="mini-card"><h3 class="mini-title">分级处理</h3><p class="mini-text">支持 observe、alert、kick 模式，默认 observe。</p></article><article class="mini-card"><h3 class="mini-title">低风险矿物统计</h3><p class="mini-text">矿物统计用于管理员观察，不计入处罚分数，也不触发踢出。</p></article><article class="mini-card"><h3 class="mini-title">异常自动降级</h3><p class="mini-text">低 TPS、无效配置或 PacketEvents 不可用时回到观察模式。</p></article></div></section>
+        <section class="section" id="workflow"><h2 class="section-title">使用流程</h2><div class="timeline"><article class="timeline-item"><div class="step-index">一</div><h3 class="step-title">先以观察模式收集服务器行为证据。</h3></article><article class="timeline-item"><div class="step-index">二</div><h3 class="step-title">检查 /xrayac alerts 与玩家记录，调整世界和插件白名单。</h3></article><article class="timeline-item"><div class="step-index">三</div><h3 class="step-title">确认误报可控后，再逐步启用提醒或踢出。</h3></article></div></section>
+        <section class="section" id="info"><h2 class="section-title">运行信息</h2><div class="info-list"><article class="info-item"><h3 class="info-title">支持平台</h3><p class="info-text">Paper 1.21.11；Java 21。</p></article><article class="info-item"><h3 class="info-title">依赖组件</h3><p class="info-text">PacketEvents 2.x 用于数据包战斗样本；缺失时其他检查仍可工作。</p></article><article class="info-item"><h3 class="info-title">管理命令</h3><p class="info-text">/xrayac alerts、inspect、mode、exempt、health、reload。</p></article></div></section>
+        <p class="footer-note">矿物统计只用于观察。项目没有自动封禁；启用自动踢出前请先收集证据并按服务器环境调优。 <a class="btn secondary" href="https://github.com/uxu2023259/XRayAC" target="_blank" rel="noopener noreferrer">打开 GitHub 项目</a></p>
+    </main>
+</body>
+</html>

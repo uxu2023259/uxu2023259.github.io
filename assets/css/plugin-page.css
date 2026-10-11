@@ -131,3 +131,23 @@ body {
 @keyframes iconFloat { 0%, 100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-10px) rotate(2deg); } }
 @media (max-width: 720px) { .page { width: min(92%, 620px); padding-top: 24px; } .plugin-icon { width: 118px; height: 118px; border-radius: 30px; } .icon-text { font-size: 3rem; } .quick-links { gap: 10px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+body.theme-potion { --bg:#100b24; --text:#faf5ff; --muted:#d0c2e4; --accent:#9b77ff; --accent-2:#5cecff; --icon-fg:#15102a; }
+body.theme-disaster { --bg:#101827; --text:#f4f8ff; --muted:#b8c7dc; --accent:#58d7ff; --accent-2:#ffb34d; --icon-fg:#0c1726; }
+body.theme-xraydp { --bg:#081c14; --text:#edfff6; --muted:#b6d9c8; --accent:#63f3a2; --accent-2:#80e8ff; --icon-fg:#07180f; }
+body.theme-aichat { --bg:#10102b; --text:#f7f6ff; --muted:#c4c3e0; --accent:#7e8cff; --accent-2:#55e8ff; --icon-fg:#10122b; }
+body.theme-bantag { --bg:#1b0b13; --text:#fff3f6; --muted:#d8b7c2; --accent:#ff5c72; --accent-2:#ffbb67; --icon-fg:#210b13; }
+body.theme-bedrockhelper { --bg:#071b25; --text:#f0fcff; --muted:#b2d1da; --accent:#5cecff; --accent-2:#78ffb6; --icon-fg:#061820; }
+body.theme-bigbrother { --bg:#0a1626; --text:#eff7ff; --muted:#b9cce2; --accent:#7bb7ff; --accent-2:#ffd169; --icon-fg:#0c1729; }
+body.theme-ecoblock { --bg:#0b1b13; --text:#f1fff3; --muted:#b8d3bd; --accent:#7fe17a; --accent-2:#ffd26e; --icon-fg:#0c1a10; }
+body.theme-cmdmask { --bg:#161020; --text:#f9f4ff; --muted:#c9bddb; --accent:#c18aff; --accent-2:#ff647b; --icon-fg:#1b1228; }
+body.theme-geyser { --bg:#071c25; --text:#effcff; --muted:#b4d5dc; --accent:#53dcff; --accent-2:#78ffc8; --icon-fg:#071a21; }
+body.theme-commandfix { --bg:#0c1b19; --text:#f2fffc; --muted:#bad5cc; --accent:#72e1b2; --accent-2:#ffd36e; --icon-fg:#0c1c17; }
+body.theme-shop { --bg:#211506; --text:#fff9e8; --muted:#dfc9a4; --accent:#ffc45f; --accent-2:#71e6a5; --icon-fg:#281706; }
+body.theme-stopwarn { --bg:#1b1208; --text:#fff8ed; --muted:#d8c5a8; --accent:#ffbb58; --accent-2:#ff795e; --icon-fg:#211506; }
+body.theme-surpvp { --bg:#0b1024; --text:#f4f5ff; --muted:#bfc4df; --accent:#75a7ff; --accent-2:#ff687d; --icon-fg:#0d1530; }
+body.theme-tntprotect { --bg:#1d0d0a; --text:#fff3ef; --muted:#dfbcb4; --accent:#ff685c; --accent-2:#ffc265; --icon-fg:#260f0b; }
+body.theme-wayfix { --bg:#10192a; --text:#f5f8ff; --muted:#bac9df; --accent:#65caff; --accent-2:#ffd66e; --icon-fg:#101a2a; }
+body.theme-xrayac { --bg:#081822; --text:#effbff; --muted:#b1cdd8; --accent:#53d9ff; --accent-2:#9dff8c; --icon-fg:#081720; }
+body.theme-xraychat { --bg:#071a27; --text:#f1fbff; --muted:#b5ced8; --accent:#5de2ff; --accent-2:#8f93ff; --icon-fg:#071824; }
+body.theme-xraymc { --bg:#101707; --text:#f6ffed; --muted:#c4d2b3; --accent:#a4e85d; --accent-2:#ffca61; --icon-fg:#11190b; }

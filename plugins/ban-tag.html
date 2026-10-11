@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="同步 LiteBans 封禁历史，提供玩家查询、榜单与罪恶标记展示。">
+    <meta name="theme-color" content="#07111f">
+    <title>封禁名牌 · 插件介绍</title>
+    <link rel="stylesheet" href="../assets/css/plugin-page.css">
+</head>
+<body class="theme-bantag">
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="../index.html" aria-label="返回主页"><span class="brand-mark" aria-hidden="true"></span>封禁名牌 · BanTag</a>
+            <nav class="quick-links" aria-label="页面导航"><a href="#intro">插件介绍</a><a href="#features">核心能力</a><a href="#workflow">使用流程</a><a href="#info">运行信息</a></nav>
+        </header>
+        <section class="hero" aria-label="插件概览">
+            <article class="identity">
+                <div class="plugin-icon image-icon" aria-label="封禁名牌图标"><img src="../assets/images/plugin-icons/ban-tag.webp" alt="封禁名牌图标" loading="eager" decoding="async"></div>
+                <h1 class="name-cn">封禁名牌</h1><p class="subtitle">把 LiteBans 历史整理为可查询的玩家标记</p>
+            </article>
+            <article class="hero-copy">
+                <p class="label">封禁记录 · 玩家榜单 · 头顶与 Tab 标记</p>
+                <h2 class="hero-title">封禁名牌 · <span class="accent-text">项目介绍</span></h2>
+                <p class="hero-text">封禁名牌从 LiteBans 读取玩家封禁历史，整理为可检索的记录和榜单，并可将简短标记显示在玩家名牌或 Tab 名称前。插件提供中文管理界面，便于查看同步状态和记录来源。</p>
+                <div class="hero-actions"><a class="btn primary" href="#features">查看核心能力</a><a class="btn secondary" href="https://github.com/uxu2023259/BanTag" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div>
+            </article>
+        </section>
+        <section class="section" id="intro"><h2 class="section-title">插件介绍</h2><p class="section-lead">同步 LiteBans 封禁历史，提供玩家查询、榜单与罪恶标记展示。 项目源码、更新记录及安装细节请查看 GitHub 仓库。</p></section>
+        <section class="section" id="features"><h2 class="section-title">核心能力</h2><div class="card-list"><article class="mini-card"><h3 class="mini-title">封禁记录同步</h3><p class="mini-text">读取 LiteBans 历史并按计划更新玩家聚合记录。</p></article><article class="mini-card"><h3 class="mini-title">榜单与查询</h3><p class="mini-text">通过命令查看榜单、玩家记录或打开界面。</p></article><article class="mini-card"><h3 class="mini-title">名牌标记</h3><p class="mini-text">按配置在玩家头顶与 Tab 前缀显示简短标识。</p></article><article class="mini-card"><h3 class="mini-title">多种存储方式</h3><p class="mini-text">支持 H2、MariaDB 与 MySQL 配置；可通过导出文件减少 H2 文件锁冲突。</p></article><article class="mini-card"><h3 class="mini-title">同步诊断</h3><p class="mini-text">管理员可查看同步来源、失败原因和有效记录数。</p></article></div></section>
+        <section class="section" id="workflow"><h2 class="section-title">使用流程</h2><div class="timeline"><article class="timeline-item"><div class="step-index">一</div><h3 class="step-title">配置 LiteBans 数据库或导出文件位置。</h3></article><article class="timeline-item"><div class="step-index">二</div><h3 class="step-title">插件按启动延迟与同步间隔更新历史数据。</h3></article><article class="timeline-item"><div class="step-index">三</div><h3 class="step-title">玩家查询记录或查看榜单，名牌显示相应标记。</h3></article></div></section>
+        <section class="section" id="info"><h2 class="section-title">运行信息</h2><div class="info-list"><article class="info-item"><h3 class="info-title">支持平台</h3><p class="info-text">Paper 1.20.4–1.21.11。</p></article><article class="info-item"><h3 class="info-title">依赖组件</h3><p class="info-text">LiteBans 与适配当前服务端版本的 ProtocolLib。</p></article><article class="info-item"><h3 class="info-title">管理命令</h3><p class="info-text">/bantag 榜单、界面、查询、同步、状态、重载。</p></article></div></section>
+        <p class="footer-note">数据库文件正在被 LiteBans 使用时，优先配置 BanTag 导出文件，避免直接读取被锁定的 H2 数据库。 <a class="btn secondary" href="https://github.com/uxu2023259/BanTag" target="_blank" rel="noopener noreferrer">打开 GitHub 项目</a></p>
+    </main>
+</body>
+</html>

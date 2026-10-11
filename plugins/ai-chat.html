@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="通过游戏内命令向 DeepSeek 或 OpenAI 兼容接口提问，并可按权限开放模型。">
+    <meta name="theme-color" content="#07111f">
+    <title>AI 聊天 · 插件介绍</title>
+    <link rel="stylesheet" href="../assets/css/plugin-page.css">
+</head>
+<body class="theme-aichat">
+    <main class="page">
+        <header class="topbar">
+            <a class="brand" href="../index.html" aria-label="返回主页"><span class="brand-mark" aria-hidden="true"></span>AI 聊天 · AIChat</a>
+            <nav class="quick-links" aria-label="页面导航"><a href="#intro">插件介绍</a><a href="#features">核心能力</a><a href="#workflow">使用流程</a><a href="#info">运行信息</a></nav>
+        </header>
+        <section class="hero" aria-label="插件概览">
+            <article class="identity">
+                <div class="plugin-icon image-icon" aria-label="AI 聊天图标"><img src="../assets/images/plugin-icons/ai-chat.webp" alt="AI 聊天图标" loading="eager" decoding="async"></div>
+                <h1 class="name-cn">AI 聊天</h1><p class="subtitle">在 Minecraft 聊天中连接 AI 模型</p>
+            </article>
+            <article class="hero-copy">
+                <p class="label">DeepSeek · OpenAI 接口 · 模型权限</p>
+                <h2 class="hero-title">AI 聊天 · <span class="accent-text">项目介绍</span></h2>
+                <p class="hero-text">AI 聊天插件把模型问答接入服务器聊天，玩家可使用 /ai 提交问题。管理员可以配置服务商、默认模型、上下文轮数、输出上限、冷却和并发，并通过权限档位控制玩家可选模型。</p>
+                <div class="hero-actions"><a class="btn primary" href="#features">查看核心能力</a><a class="btn secondary" href="https://github.com/uxu2023259/AIChat" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div>
+            </article>
+        </section>
+        <section class="section" id="intro"><h2 class="section-title">插件介绍</h2><p class="section-lead">通过游戏内命令向 DeepSeek 或 OpenAI 兼容接口提问，并可按权限开放模型。 项目源码、更新记录及安装细节请查看 GitHub 仓库。</p></section>
+        <section class="section" id="features"><h2 class="section-title">核心能力</h2><div class="card-list"><article class="mini-card"><h3 class="mini-title">多服务商</h3><p class="mini-text">配置 DeepSeek 和 OpenAI 兼容接口，并选择可用模型。</p></article><article class="mini-card"><h3 class="mini-title">游戏内提问</h3><p class="mini-text">玩家通过 /ai 发送内容，回答回到游戏聊天。</p></article><article class="mini-card"><h3 class="mini-title">模型权限</h3><p class="mini-text">按权限档位开放不同模型，玩家权限可组合。</p></article><article class="mini-card"><h3 class="mini-title">请求限制</h3><p class="mini-text">支持玩家冷却、全局并发限制、上下文轮数和输出长度上限。</p></article><article class="mini-card"><h3 class="mini-title">可扩展接入</h3><p class="mini-text">可与 PlayerChat 等聊天插件协作。</p></article></div></section>
+        <section class="section" id="workflow"><h2 class="section-title">使用流程</h2><div class="timeline"><article class="timeline-item"><div class="step-index">一</div><h3 class="step-title">管理员配置服务商接口和 API 密钥。</h3></article><article class="timeline-item"><div class="step-index">二</div><h3 class="step-title">为玩家授予可用模型档位权限。</h3></article><article class="timeline-item"><div class="step-index">三</div><h3 class="step-title">玩家使用 /ai 提问，插件返回模型回答。</h3></article></div></section>
+        <section class="section" id="info"><h2 class="section-title">运行信息</h2><div class="info-list"><article class="info-item"><h3 class="info-title">支持平台</h3><p class="info-text">Paper 1.20 或更高版本。</p></article><article class="info-item"><h3 class="info-title">使用命令</h3><p class="info-text">/ai &lt;内容&gt;；模型访问按配置权限控制。</p></article><article class="info-item"><h3 class="info-title">运行要求</h3><p class="info-text">使用前需为启用的模型服务商配置有效 API 密钥。</p></article></div></section>
+        <p class="footer-note">API 密钥通过服务器配置提供。请限制配置文件访问权限，并按服务商的费用和速率限制进行配置。 <a class="btn secondary" href="https://github.com/uxu2023259/AIChat" target="_blank" rel="noopener noreferrer">打开 GitHub 项目</a></p>
+    </main>
+</body>
+</html>
